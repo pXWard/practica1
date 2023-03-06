@@ -24,20 +24,7 @@ while(able_to_continue){
         }        
             else able_to_continue = 0;
 }
-// function counting(arrayfirst, arraysecond, move){ 
-//     if (move == 1)
-//         i = 0;
-//     if (move == 2)
-//         i = 1;      
-//     for(; i < arrayfirst.length; i += 2) {  // take every second element
-//             arraysecond.push(arrayfirst[i]);
-//     }
-// return arraysecond;
-// }
 
-// alert(used);
-// alert(counting(used, usedf, 1));
-// alert(counting(used, useds, 2));
 alert(usedf);
 alert(useds);
 if (usedf.length > useds.length){
