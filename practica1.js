@@ -3,6 +3,7 @@ var nums = "0123456789", one_to_replace = "", hexnum, begin_end = "", first_ones
 
 function hex(s){
 for (let i = 0; i < s.length;++i){
+
     if (nums.includes(s[i])){
         begin_end += String(i + 1);
         one_to_replace += s[i];
@@ -13,6 +14,7 @@ for (let i = 0; i < s.length;++i){
             first_ones = s.slice(0, begin_end[0] - 1);
             last_ones = s.substr(begin_end[(begin_end.length - 1)]);
             }
+            
             else{ one_to_replace = "";}
         }
     }
