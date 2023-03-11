@@ -9,8 +9,8 @@ able_to_continue = true;
 while(able_to_continue){
     move = prompt("Which one is going to make a move(1 or 2)");
     var word = prompt("Player is making his move (the moment you want to stop the game, call the 'end'- command)");
-    if(word != "end"){
-        if(confirm("Do another player find that word appropriate?")){
+    if(word != "end" ){
+        if(confirm("Do another player find that word appropriate?") && ((usedf.includes(word)==false) && (useds.includes(word)==false))){
             if (move == "1"){
                 usedf.push(word);
                 continue;}
@@ -22,7 +22,8 @@ while(able_to_continue){
             {alert("Please redo your move");
             continue;}
         }        
-            else able_to_continue = 0;
+    else able_to_continue = 0;
+     
 }
 
 alert(usedf);
